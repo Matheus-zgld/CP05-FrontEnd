@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melodia: Sua Música, Sua Forma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b5fc5c98e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-gray-900 text-white p-4 fixed w-full top-0 left-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-semibold flex items-center">
+                <i class="fas fa-music mr-2 text-yellow-400"></i> Melodia
+            </a>
+
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#hero" class="hover:text-yellow-400">Início</a></li>
+                <li><a href="#features" class="hover:text-yellow-400">Funcionalidades</a></li>
+                <li><a href="#testimonials" class="hover:text-yellow-400">Depoimentos</a></li>
+                <li><a href="#download" class="hover:text-yellow-400">Inscrever-se</a></li>
+            </ul>
+
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <ul class="flex flex-col items-center py-4 space-y-4">
+                <li><a href="#hero" class="hover:text-yellow-400">Início</a></li>
+                <li><a href="#features" class="hover:text-yellow-400">Funcionalidades</a></li>
+                <li><a href="#testimonials" class="hover:text-yellow-400">Depoimentos</a></li>
+                <li><a href="#download" class="hover:text-yellow-400">Inscrever-se</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white h-screen flex flex-col justify-center items-center text-center" id="hero">
+        <h1 class="text-4xl md:text-6xl font-semibold mb-4">Melodia: Sua Música, Sua Forma</h1>
+        <p class="text-xl md:text-2xl mb-6 max-w-lg">Descubra, ouça e compartilhe música de maneira única, com qualidade de som superior e uma interface intuitiva.</p>
+        <a href="#download" class="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300">
+            <i class="fas fa-play mr-2"></i> Ouvir Agora
+        </a>
+        <div class="mt-8 flex justify-center"></div>
+            <img src="Melodia.png" alt="Melodia App Demo" class="w-2/5 rounded-lg shadow-lg">
+        </div>
+    </header>
+
+    <section class="py-20 bg-white" id="presentation">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Benefícios do Melodia</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-headphones text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Qualidade de Som Superior</h3>
+                    <p class="text-gray-600">Ouça suas músicas favoritas com uma qualidade de som incomparável.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-play-circle text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Playlists Personalizadas</h3>
+                    <p class="text-gray-600">Crie playlists únicas e descubra músicas novas todos os dias.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-search text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Descubra Novos Artistas</h3>
+                    <p class="text-gray-600">Explore músicas e gêneros em alta no mundo todo.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-users text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Comunidade Ativa</h3>
+                    <p class="text-gray-600">Compartilhe suas playlists e interaja com outros amantes da música.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-gift text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Ofertas Exclusivas</h3>
+                    <p class="text-gray-600">Ganhe acesso antecipado a lançamentos e promoções especiais.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-moon text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Modo Noturno</h3>
+                    <p class="text-gray-600">Interface otimizada para ouvir música confortavelmente à noite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-100" id="features">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Funcionalidades do Melodia</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-random text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Reprodução Sem Intervalos</h3>
+                    <p class="text-gray-600">Experiência contínua com transições suaves entre faixas.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-download text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Modo Offline</h3>
+                    <p class="text-gray-600">Ouça suas músicas mesmo sem internet.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-brain text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Recomendações Inteligentes</h3>
+                    <p class="text-gray-600">Sugestões com base nos seus hábitos musicais.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-tv text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Integração com Smart TV</h3>
+                    <p class="text-gray-600">Conecte o app direto à sua TV e curta no som da sala.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-bolt text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Carregamento Rápido</h3>
+                    <p class="text-gray-600">Streaming otimizado sem travamentos.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <i class="fas fa-shield-alt text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-3">Segurança de Dados</h3>
+                    <p class="text-gray-600">Seus dados pessoais e playlists protegidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white" id="testimonials">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">O que os Usuários Estão Dizendo</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg max-w-xs">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.EUBMLRtAeWcta0le3HWcUQHaHa?w=1240&h=1240&rs=1&pid=ImgDetMain&o=7&rm=3" alt="User 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <p class="text-gray-600 mb-4">"A qualidade do som é incrível! Nunca mais vou usar outro app de música."</p>
+                    <p class="font-semibold">João, 25 anos</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg max-w-xs">
+                    <img src="https://img.freepik.com/fotos-premium/ilustracao-ia-generativa-uma-jovem-e-bonita-mulher-com-excelente-pele-e-maquiagem-natural_92795-4012.jpg" alt="User 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <p class="text-gray-600 mb-4">"As playlists personalizadas são perfeitas! Descubro novas músicas todos os dias."</p>
+                    <p class="font-semibold">Larissa, 22 anos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-200" id="download">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Fique por Dentro</h2>
+            <p class="text-lg mb-6">Inscreva-se para receber novidades, ofertas exclusivas e muito mais!</p>
+            <form action="#" method="POST" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+                <input type="email" placeholder="Seu e-mail" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required>
+                <button type="submit" class="w-full bg-yellow-400 text-gray-900 font-bold py-3 rounded-lg hover:bg-yellow-300 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Inscrever-se
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-gray-900 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Melodia App. Todos os direitos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="mt-2">
+                <a href="#" class="text-white hover:text-yellow-400">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
