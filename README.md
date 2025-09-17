@@ -46,7 +46,7 @@ Foram aplicadas **boas práticas de design front-end** e foco na responsividade 
    - Título impactante: *"Melodia: Sua Música, Sua Forma"*  
    - Breve descrição do app  
    - Botão de chamada para ação (CTA): *"Ouvir Agora"*  
-   - Imagem ou vídeo demonstrativo  
+   - Imagem demonstrativo  
 
 2. **Apresentação**  
    - Benefícios do app com ícones (Font Awesome)  
