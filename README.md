@@ -86,4 +86,4 @@ Foram aplicadas **boas práticas de design front-end** e foco na responsividade 
 - **CSS3 / Tailwind** → Estilização e responsividade  
 - **Font Awesome** → Ícones personalizados  
 - **Google Fonts** → Tipografia  
-- **JavaScript (opcional)** → Efeitos de interação  
+- **JavaScript** → Efeitos de interação  
